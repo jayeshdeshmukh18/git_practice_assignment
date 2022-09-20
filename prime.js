@@ -1,15 +1,16 @@
 function prime(num){
-let counter=0;
+
+  let factors=0;
     for (let i=1;i<=num;i++){
         if(num%i==0){
-          counter++; 
-            
+            factors++;
         }
     }
-    if(counter==2){
-       return true
+    if(factors==2){
+        return true;
     }
-      return false
+    return false;
+
 
 }
 
@@ -19,4 +20,5 @@ if (ans==true){
 }
 else{
    console.log("Not Prime")
+
 }
